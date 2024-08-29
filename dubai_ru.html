@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BestWork</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="./images/rounded_logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index_ru.html" class="site-brand">
+                Best<span>Work</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index_ru.html" class="nav-link">Главная</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="blog_ru.html" class="nav-link">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_ru.html" class="nav-link">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact_ru.html" class="nav-link">Контакт</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class="flex header-sm">
+        <div class="container">
+            <div class="header-title">
+                <h1>Дубай</h1>
+                <p>Подробная информация!</p>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- about section -->
+    <section id="about" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">колонка подробно</span>
+                <h2 class="lg-title">Работа в Дубае</h2>
+            </div>
+
+            <div class="about-row">
+                <div class="about-left my-2">
+                    <img style="border-radius: 20px;" src="./images/Dubai1.jpg" alt="about img">
+                </div>
+                <div class="about-right">
+                    <h2>7 дней 500$ </h2>
+                    <p class="text">Требуются люди для легальной работы в Дубае.<br>Пассивный доход: отдыхай и зарабатывай<br><br>Жильё,перелет и еда оплачиваются!<br>
+                        Отдохни и заработай!
+                    </p>
+                    <p class="text">ВАЖНО: 25лет минимум</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Свяжитесь с нами</span>
+                <h2 class="lg-title">контакт форма</h2>
+            </div>
+
+            <div class="contact-row">
+                <div class="contact-left">
+                    <form action="./api/sendData.php" method="post" class="contact-form">
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                        <input type="email" name="email" class="form-control" placeholder="Ваша почта">
+                        <input type="tel" name="phone" class="form-control" placeholder="Ваш номер">
+                        <textarea rows="4" name="message" class="form-control" placeholder="Ваше сообщение"
+                            style="resize: none;"></textarea>
+                        <input type="submit" class="btn" value="Отправить">
+                    </form>
+                </div>
+                <div class="contact-right my-2">
+                    <div class="contact-item">
+                        <span class="contact-icon flex">
+                            <i class="fa fa-phone-alt"></i>
+                        </span>
+                        <div>
+                            <span>Телефон</span>
+                            <p class="text">+373-781-67-107</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon flex">
+                            <i class="fa fa-map-marked-alt"></i>
+                        </span>
+                        <div>
+                            <span>Адрес</span>
+                            <p class="text">Estate Art Residence, Chișinău, MD</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon flex">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <div>
+                            <span>Почта</span>
+                            <p class="text">info@bestwork.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about section -->
+
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index_ru.html" class="site-brand">
+                    Best<span>Work</span>
+                </a>
+                <p class="text">Все официально, безопасно и выгодно!</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Социальные сети: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://t.me/bestworkblog">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Популярные направления:</h2>
+                <ul>
+
+                    <li><a href="./dubai_ru.html">Дубай</a></li>
+                    <li><a href="#">Таиланд (пока недоступно)</a></li>
+                    <li><a href="#">Китай (пока недоступно)</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Оставьте заявку!</h2>
+                <form action="./api/sendData.php" method="post" class="contact-form">
+                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                    <input type="tel" name="phone" class="form-control" placeholder="Ваш номер">
+                    <input type="submit" class="btn" value="Отправить">
+                </form>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>&#169 2024 BestWork All Right Reserved</p>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
